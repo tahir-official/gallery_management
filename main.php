@@ -36,8 +36,10 @@ function use_wpgm_page_template( $template ) {
     if ( is_page( 'My gallery list' )  ) {
         $new_template =  plugin_dir_path( __FILE__ ) . 'gallery-template.php';
         return $new_template;
+    }else{
+        return $template;
     }
-return;
+
 }
 /*plugin active hook*/
 register_activation_hook( __FILE__, 'wpgm_plugin_activate' );
