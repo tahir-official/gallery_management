@@ -118,10 +118,10 @@ get_footer(); ?>
            $("#gallery_data").html(response.html);
            $("#loadMore").css('display','block');
            $("#loadMore").text("Load More").removeClass("noContent");
-           $(".content").slice(0, 3).show();
+           $(".content").slice(0, 6).show();
            $("#loadMore").on("click", function(e){
             e.preventDefault();
-            $(".content:hidden").slice(0, 3).slideDown();
+            $(".content:hidden").slice(0, 6).slideDown();
             if($(".content:hidden").length == 0) {
               $("#loadMore").text("No Gallery").addClass("noContent");
             }
